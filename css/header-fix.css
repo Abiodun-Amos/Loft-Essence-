@@ -1,0 +1,23 @@
+/* Loft Essence — header breathing-room fix
+   The theme's own responsive.css only loosens header spacing between
+   1200-1500px; outside that narrow band (and depending on browser zoom /
+   scrollbar width) "Home About Services Shop Gallery FAQ Contact" +
+   the phone block can be a few pixels too wide for one row, so it wraps.
+   This gives the nav consistent extra room from 1200px up, with no gap. */
+@media (min-width: 1200px) {
+  .container-fluid.pl-80.pr-80 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main-menu ul li a {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 15px;
+  }
+  .call-box .text {
+    font-size: 12px;
+  }
+  .call-box .text strong {
+    font-size: 13px;
+  }
+}
